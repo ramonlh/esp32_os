@@ -1,9 +1,10 @@
 
 
 #include "WiFi.h"
+#include "secrets.h"
 
-char ssids[3][30] = {"TU_WIFI", "ROVER_DIEGO", "Adeept"};
-char passwords[3][30] = {"TU_PASSWORD_WIFI", "12341234", "12345678"};
+char ssids[3][30] = {SECRET_WIFI_SSID, "ROVER_DIEGO", "Adeept"};
+char passwords[3][30] = {SECRET_WIFI_PASSWORD, "12341234", "12345678"};
 char socketservers[3][30] = {"192.168.11.91", "192.168.4.1", ""};
 const uint16_t websocket_port = 81;
 const char* websocket_path = "/";  // Ruta del WebSocket, puede ser "/"
